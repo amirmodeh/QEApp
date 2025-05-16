@@ -12,3 +12,4 @@ C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Test\obj\Debug\n
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Test\bin\Debug\net9.0\QEApp.Test.runtimeconfig.json
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Test\obj\Debug\net9.0\QEApp.Test.csproj.AssemblyReference.cache
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Test\obj\Debug\net9.0\QEApp.Test.genruntimeconfig.cache
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Test\obj\Debug\net9.0\QEApp.Test.sourcelink.json

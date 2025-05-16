@@ -240,3 +240,7 @@ C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\QEApp.Infrastructure.dll
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\QEApp.Domain.pdb
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\QEApp.Infrastructure.pdb
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\SmsIrRestfulNetCore.dll
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\QEApp.Application.dll
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\bin\Debug\net9.0\QEApp.Application.pdb
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp\obj\Debug\net9.0\QEApp.Web.sourcelink.json

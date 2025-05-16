@@ -20,9 +20,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SmsIrRestfulNetCore" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QEApp.Application\QEApp.Application.csproj" />
     <ProjectReference Include="..\QEApp.Domain\QEApp.Domain.csproj" />
     <ProjectReference Include="..\QEApp.Infrastructure\QEApp.Infrastructure.csproj" />
   </ItemGroup>

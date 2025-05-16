@@ -20,12 +20,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SmsIrRestfulNetCore" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
     <Folder Include="UseCases\" />
   </ItemGroup>
 

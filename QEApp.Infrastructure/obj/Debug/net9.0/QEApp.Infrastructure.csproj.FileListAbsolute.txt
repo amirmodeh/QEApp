@@ -15,3 +15,4 @@ C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Infrastructure\o
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Infrastructure\bin\Debug\net9.0\QEApp.Domain.dll
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Infrastructure\bin\Debug\net9.0\QEApp.Domain.pdb
 C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Infrastructure\obj\Debug\net9.0\QEApp.In.B94E89A8.Up2Date
+C:\Users\Amir Mohammad\Desktop\madrese quran webapp\QEApp\QEApp.Infrastructure\obj\Debug\net9.0\QEApp.Infrastructure.sourcelink.json

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using QEApp.Application.Services.Otp;
 using QEApp.Domain.Entities.Users;
 using QEApp.Infrastructure.Persistence;
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<QEAppDbContext>(options =>
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<QEAppDbContext>()
     .AddDefaultTokenProviders();
+builder.Services.AddScoped<IOtpService, SmsIrOtpService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
