@@ -1,0 +1,26 @@
+﻿@model string
+
+<h2>تأیید کد</h2>
+
+<form asp-action="Verify" method="post">
+    <input type="hidden" name="mobile" value="@Model" />
+
+    <div>
+        <label>کد ارسال‌شده:</label>
+        <input type="text" name="code" required />
+    </div>
+
+    <div>
+        <button type="submit">ورود</button>
+    </div>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div style="color:red;">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

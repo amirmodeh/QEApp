@@ -10,8 +10,8 @@ namespace QEApp.Domain.Entities.Users
     // کاربر سامانه: دانش‌آموز، استاد، مدیر
     public class User : IdentityUser
     {
-        [Required, MaxLength(15)]
-        public string MobileNumber { get; set; } = null!;
+        [Required]
+        public long MobileNumber { get; set; } 
         [MaxLength(50)]
         public string FirstName { get; set; }
         [MaxLength(50)]
@@ -24,7 +24,7 @@ namespace QEApp.Domain.Entities.Users
         public string? AccessLevel { get; set; }
         [MaxLength(6)]
         public string? OtpCode { get; set; }
-        public DateTime? OtpExpiresAt { get; set; }
+        public DateTime? OtpGeneratedAt { get; set; }
         public int TotalScore { get; set; } = 0;
         [Required]
         public bool IsDeleted { get; set; } = false;

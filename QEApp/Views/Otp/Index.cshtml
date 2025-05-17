@@ -1,0 +1,9 @@
+﻿@model string
+
+<h2>ورود / ثبت‌نام</h2>
+
+<form asp-action="SendOtp" method="post">
+    <label>شماره موبایل:</label>
+    <input type="text" name="mobile" required />
+    <button type="submit">ارسال کد</button>
+</form>
