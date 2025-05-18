@@ -11,7 +11,7 @@ namespace QEApp.Application.Services.Otp
             _configuration = configuration;
         }
 
-        public Task<bool> SendOtpAsync(long mobile, string code)
+        public Task<bool> SendOtpAsync(string mobile, string code)
         {
             var apiKey = _configuration["SmsIr:ApiKey"];
             var secretKey = _configuration["SmsIr:SecretKey"];
@@ -24,7 +24,7 @@ namespace QEApp.Application.Services.Otp
 
             var restVerificationCode = new UltraFastSend
             {
-                Mobile = mobile,
+                Mobile = int.Parse(mobile),
                 TemplateId = templateId,
                 ParameterArray = new[]
                 {

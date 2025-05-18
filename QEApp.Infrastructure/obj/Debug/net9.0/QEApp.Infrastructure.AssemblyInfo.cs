@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QEApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5337ecf58270ea3db1f3d8582500c2a85401b8ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48d7bed0b56b4129ba3e47269174a6abc9b76681")]
 [assembly: System.Reflection.AssemblyProductAttribute("QEApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QEApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

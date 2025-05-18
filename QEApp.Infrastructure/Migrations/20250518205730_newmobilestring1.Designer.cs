@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QEApp.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using QEApp.Infrastructure.Persistence;
 namespace QEApp.Infrastructure.Migrations
 {
     [DbContext(typeof(QEAppDbContext))]
-    partial class QEAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250518205730_newmobilestring1")]
+    partial class newmobilestring1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -572,6 +575,9 @@ namespace QEApp.Infrastructure.Migrations
                     b.Property<string>("OtpCode")
                         .HasMaxLength(6)
                         .HasColumnType("nvarchar(6)");
+
+                    b.Property<DateTime?>("OtpExpiresAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("OtpGeneratedAt")
                         .HasColumnType("datetime2");

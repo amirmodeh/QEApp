@@ -8,6 +8,6 @@ namespace QEApp.Application.Services.Otp
 {
     public interface IOtpService
     {
-        Task<bool> SendOtpAsync(long mobile, string code);
+        Task<bool> SendOtpAsync(string mobile, string code);
     }
 }

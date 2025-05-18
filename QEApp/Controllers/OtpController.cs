@@ -26,7 +26,7 @@ namespace QEApp.Web.Controllers
             if (!ModelState.IsValid)
                 return View("Index", model);
 
-            long mobileNumber = model.Mobile; // یا قبلاً تبدیل‌شده
+            string mobileNumber = model.Mobile; // یا قبلاً تبدیل‌شده
 
             var otpCode = new Random().Next(100000, 999999).ToString();
 
@@ -73,14 +73,14 @@ namespace QEApp.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Verify(string mobile, string code)
         {
-            if (!long.TryParse(mobile, out var mobileNumber))
+            if (string.IsNullOrWhiteSpace(mobile))
             {
-                ModelState.AddModelError("", "شماره موبایل معتبر نیست.");
+                ModelState.AddModelError(nameof(mobile), "شماره موبایل معتبر نیست.");
                 ViewBag.Mobile = mobile;
                 return View();
             }
 
-            var user = await _qEAppDbContext.Users.FirstOrDefaultAsync(u => u.MobileNumber == mobileNumber);
+            var user = await _qEAppDbContext.Users.FirstOrDefaultAsync(u => u.MobileNumber == mobile);
             if (user == null)
             {
                 ModelState.AddModelError("", "کاربر یافت نشد.");

@@ -1,7 +1,12 @@
 ﻿@model string
 
 <h2>تأیید کد</h2>
-
+@if (TempData["SentCode"] != null)
+{
+    <div class="alert alert-info">
+        کد ارسال‌شده (فقط برای تست): <strong>@TempData["SentCode"]</strong>
+    </div>
+    }
 <form asp-action="Verify" method="post">
     <input type="hidden" name="mobile" value="@Model" />
 

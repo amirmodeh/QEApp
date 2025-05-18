@@ -6,6 +6,6 @@ namespace QEApp.Web.Models
     {
         [Required(ErrorMessage = "شماره موبایل الزامی است.")]
         [Display(Name = "شماره موبایل")]
-        public long Mobile { get; set; }
+        public string Mobile { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QEApp.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using QEApp.Infrastructure.Persistence;
 namespace QEApp.Infrastructure.Migrations
 {
     [DbContext(typeof(QEAppDbContext))]
-    partial class QEAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250518205455_newmobilestring")]
+    partial class newmobilestring
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
